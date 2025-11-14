@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kezdőlap</title>
+    <title>Kezdőoldal</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Javascript-->
+    <script src="js/script.js" defer></script>
+    <!-- Egyedi Tailwind konfiguráció színekhez -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6464',
+                        secondary: '#00A8CC',
+                        heading: '#21243D',
+                        text: '#8695A4',
+                        bg: '#FFFFFF'
+                    },
+                    fontFamily: {
+                        heebo: ['Heebo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="bg-bg font-heebo text-text">
+
+    <!-- NAVIGÁCIÓ -->
+    <header class="bg-bg shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-heading">Portfolio</div>
+            <nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-heading focus:outline-none">
+                        &#9776;
+                    </button>
+                </div>
+                <ul id="menu" class="hidden md:flex space-x-6 text-heading font-medium">
+                    <li><a href="index.html" class="hover:text-primary">Kezdőoldal</a></li>
+                    <li><a href="blogs.html" class="hover:text-primary">Blogok</a></li>
+                    <li><a href="works.html" class="hover:text-primary">Munkáim</a></li>
+                    <li><a href="contact.html" class="hover:text-primary">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
 </body>
 </html>
