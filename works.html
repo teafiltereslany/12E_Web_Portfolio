@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munkáim</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6464',
+                        secondary: '#00A8CC',
+                        heading: '#21243D',
+                        text: '#8695A4',
+                        bg: '#FFFFFF'
+                    },
+                    fontFamily: {
+                        heebo: ['Heebo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-bg font-heebo text-text">
+
+    <!-- NAVBAR -->
+    <header class="bg-bg shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-heading">Portfolio</div>
+            <nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-heading focus:outline-none">
+                        &#9776;
+                    </button>
+                </div>
+                <ul id="menu" class="hidden md:flex space-x-6 text-heading font-medium">
+                    <li><a href="index.html" class="hover:text-primary">Kezdőoldal</a></li>
+                    <li><a href="blogs.html" class="hover:text-primary">Blogok</a></li>
+                    <li><a href="works.html" class="text-primary font-semibold">Munkáim</a></li>
+                    <li><a href="contact.html" class="hover:text-primary">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobil menü -->
+        <ul id="mobile-menu" class="hidden flex-col bg-bg absolute w-full left-0 text-center space-y-4 py-4 text-heading font-medium">
+            <li><a href="index.html">Kezdőoldal</a></li>
+            <li><a href="blogs.html">Blogok</a></li>
+            <li><a href="works.html" class="text-primary font-semibold">Munkáim</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+    </header>
+
+    <!-- TARTALOM -->
+    <main class="pt-28 pb-20 container mx-auto px-4">
+
+        <h1 class="text-heading font-bold text-4xl md:text-5xl mb-12">Munkáim</h1>
+
+        <div class="space-y-16">
+
+            <!-- Munka -->
+            <div class="flex flex-col md:flex-row items-start gap-8">
+                <img src="https://placehold.co/600x400" alt="Work 1" class="w-full md:w-64 rounded-lg shadow">
+
+                <div>
+                    <h2 class="text-heading text-3xl font-bold mb-2">Landing Page Redesign</h2>
+
+                    <div class="flex items-center space-x-6 mb-3">
+                        <span class="bg-heading text-white px-4 py-1 rounded-full font-bold">2025</span>
+                        <span class="text-text">UI/UX Design</span>
+                    </div>
+
+                    <p class="text-text leading-relaxed mb-4 max-w-xl">
+                        Modern, minimalista újratervezés, reszponzív felépítéssel. A cél a jobb vizuális hierarchia és nagyobb áttekinthetőség volt.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Munka -->
+            <div class="flex flex-col md:flex-row items-start gap-8">
+                <img src="https://placehold.co/600x400" alt="Work 2" class="w-full md:w-64 rounded-lg shadow">
+
+                <div>
+                    <h2 class="text-heading text-3xl font-bold mb-2">Mobil App UI Kit</h2>
+
+                    <div class="flex items-center space-x-6 mb-3">
+                        <span class="bg-heading text-white px-4 py-1 rounded-full font-bold">2024</span>
+                        <span class="text-text">Design System</span>
+                    </div>
+
+                    <p class="text-text leading-relaxed mb-4 max-w-xl">
+                        Egy komplett UI kit több mint 30 képernyővel, letisztult ikonokkal, komponensekkel és variációkkal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Munka -->
+            <div class="flex flex-col md:flex-row items-start gap-8">
+                <img src="https://placehold.co/600x400" alt="Work 3" class="w-full md:w-64 rounded-lg shadow">
+
+                <div>
+                    <h2 class="text-heading text-3xl font-bold mb-2">E-commerce Főoldal</h2>
+
+                    <div class="flex items-center space-x-6 mb-3">
+                        <span class="bg-heading text-white px-4 py-1 rounded-full font-bold">2023</span>
+                        <span class="text-text">Web Design</span>
+                    </div>
+
+                    <p class="text-text leading-relaxed mb-4 max-w-xl">
+                        Letisztult webáruház főoldal, fókuszban a termékekkel és a könnyű UX-szel.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-bg text-text text-center py-8 border-t">
+        &copy; 2025 Portfolio. Minden jog fenntartva.
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
