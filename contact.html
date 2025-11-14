@@ -4,8 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapcsolat</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+        <!--Javascript-->
+    <script src="js/script.js" defer></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6464',
+                        secondary: '#00A8CC',
+                        heading: '#21243D',
+                        text: '#8695A4',
+                        bg: '#FFFFFF'
+                    },
+                    fontFamily: {
+                        heebo: ['Heebo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+
+<body class="bg-bg font-heebo text-text">
+
+    <!-- NAVBAR -->
+    <header class="bg-bg shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-heading">Portfolio</div>
+            <nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-heading focus:outline-none">
+                        &#9776;
+                    </button>
+                </div>
+                <ul id="menu" class="hidden md:flex space-x-6 text-heading font-medium">
+                    <li><a href="index.html" class="hover:text-primary">Kezdőoldal</a></li>
+                    <li><a href="blogs.html" class="hover:text-primary">Blogok</a></li>
+                    <li><a href="works.html" class="hover:text-primary">Munkáim</a></li>
+                    <li><a href="contact.html" class="text-primary font-semibold">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobil menü -->
+        <ul id="mobile-menu" class="fixed top-0 left-[-100%] h-full w-64 bg-bg shadow-lg flex-col text-center space-y-4 py-20 text-heading font-medium transition-left duration-500">
+    <li><a href="index.html">Kezdőoldal</a></li>
+    <li><a href="blogs.html">Blogok</a></li>
+    <li><a href="works.html">Munkáim</a></li>
+    <li><a href="contact.html">Kapcsolat</a></li>
+</ul>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="pt-28 pb-20 container mx-auto px-4">
+
+        <h1 class="text-heading font-bold text-4xl md:text-5xl mb-12">Kapcsolat</h1>
+
+        <div class="max-w-2xl">
+
+            <p class="text-text mb-8 leading-relaxed">
+                Ha szeretnél kapcsolatba lépni velem, töltsd ki az alábbi űrlapot és hamarosan válaszolok!
+            </p>
+
+            <form action="#" method="POST" class="space-y-6">
+
+                <!-- Név -->
+                <div>
+                    <label for="name" class="block text-heading font-medium mb-1">Név</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name"
+                        class="w-full border border-text/40 px-4 py-3 rounded-lg focus:outline-none focus:border-primary"
+                        placeholder="Add meg a neved"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-heading font-medium mb-1">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        class="w-full border border-text/40 px-4 py-3 rounded-lg focus:outline-none focus:border-primary"
+                        placeholder="emailcimed@example.com"
+                        required>
+                </div>
+
+                <!-- Üzenet -->
+                <div>
+                    <label for="message" class="block text-heading font-medium mb-1">Üzenet</label>
+                    <textarea 
+                        id="message" 
+                        name="message"
+                        rows="5"
+                        class="w-full border border-text/40 px-4 py-3 rounded-lg focus:outline-none focus:border-primary"
+                        placeholder="Írd ide az üzeneted..."
+                        required></textarea>
+                </div>
+
+                <!-- Gomb -->
+                <button 
+                    type="submit"
+                    class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition font-medium">
+                    Üzenet küldése
+                </button>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-bg text-text text-center py-8 border-t">
+        &copy; 2025 Portfolio. Minden jog fenntartva.
+    </footer>
 </body>
 </html>
