@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munka részletei</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+        <!--Javascript-->
+    <script src="js/script.js" defer></script>
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6464',
+                        secondary: '#00A8CC',
+                        heading: '#21243D',
+                        text: '#8695A4',
+                        bg: '#FFFFFF'
+                    },
+                    fontFamily: {
+                        heebo: ['Heebo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-bg font-heebo text-text">
+
+    <!-- NAVBAR -->
+    <header class="bg-bg shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-heading">Portfolio</div>
+
+            <nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-heading focus:outline-none">
+                        &#9776;
+                    </button>
+                </div>
+
+                <ul id="menu" class="hidden md:flex space-x-6 text-heading font-medium">
+                    <li><a href="index.html" class="hover:text-primary">Kezdőoldal</a></li>
+                    <li><a href="blogs.html" class="hover:text-primary">Blogok</a></li>
+                    <li><a href="works.html" class="text-primary font-semibold">Munkáim</a></li>
+                    <li><a href="contact.html" class="hover:text-primary">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobil menü -->
+        <ul id="mobile-menu" class="fixed top-0 left-[-100%] h-full w-64 bg-bg shadow-lg flex-col text-center space-y-4 py-20 text-heading font-medium transition-left duration-500">
+    <li><a href="index.html">Kezdőoldal</a></li>
+    <li><a href="blogs.html">Blogok</a></li>
+    <li><a href="works.html">Munkáim</a></li>
+    <li><a href="contact.html">Kapcsolat</a></li>
+</ul>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="pt-28 pb-20 container mx-auto px-4 max-w-3xl">
+
+        <!-- CÍM -->
+        <h1 class="text-heading font-bold text-4xl md:text-5xl mb-6">Landing Page Redesign</h1>
+
+        <!-- Év / Kategória -->
+        <div class="flex items-center gap-6 mb-10">
+            <span class="bg-heading text-white px-4 py-1 rounded-full font-bold text-lg">2025</span>
+            <span class="text-text text-lg">UI/UX Design</span>
+        </div>
+
+        <!-- FŐ KÉP -->
+        <img src="https://placehold.co/600x400" alt="Work Detail" class="rounded-lg shadow mb-10">
+
+        <!-- LEÍRÁS -->
+        <h2 class="text-heading text-2xl font-bold mb-4">Projekt áttekintése</h2>
+        <p class="text-text leading-relaxed mb-8">
+            A projekt célja egy modern, letisztult és könnyen átlátható landing page újratervezése volt.
+            A vizuális hierarchiára, olvashatóságra és a reszponzív működésre fókuszáltam.
+        </p>
+
+        <h2 class="text-heading text-2xl font-bold mb-4">Felhasznált technológiák</h2>
+        <ul class="list-disc ml-6 text-text mb-8 leading-relaxed">
+            <li>Figma – UI tervezés</li>
+            <li>Tailwind CSS – gyors és egységes stílus</li>
+            <li>Reszponzív design</li>
+            <li>Design rendszer és komponensek</li>
+        </ul>
+
+        <h2 class="text-heading text-2xl font-bold mb-4">Galéria</h2>
+
+        <div class="space-y-6 mb-16">
+            <img src="https://placehold.co/600x400" class="rounded-lg shadow" alt="Preview 1">
+            <img src="https://placehold.co/600x400" class="rounded-lg shadow" alt="Preview 2">
+        </div>
+
+        <a href="works.html" class="text-primary font-medium hover:underline text-lg">
+            ← vissza a munkáimhoz
+        </a>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-bg text-text text-center py-8 border-t mt-20">
+        &copy; 2025 Portfolio. Minden jog fenntartva.
+    </footer>
+</body>
+</html>
