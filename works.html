@@ -10,6 +10,8 @@
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+        <!--Javascript-->
+    <script src="js/script.js" defer></script>
 
     <script>
         tailwind.config = {
@@ -55,22 +57,22 @@
         </div>
 
         <!-- Mobil menü -->
-        <ul id="mobile-menu" class="hidden flex-col bg-bg absolute w-full left-0 text-center space-y-4 py-4 text-heading font-medium">
-            <li><a href="index.html">Kezdőoldal</a></li>
-            <li><a href="blogs.html">Blogok</a></li>
-            <li><a href="works.html" class="text-primary font-semibold">Munkáim</a></li>
-            <li><a href="contact.html">Kapcsolat</a></li>
-        </ul>
+        <ul id="mobile-menu" class="fixed top-0 left-[-100%] h-full w-64 bg-bg shadow-lg flex-col text-center space-y-4 py-20 text-heading font-medium transition-left duration-500">
+    <li><a href="index.html">Kezdőoldal</a></li>
+    <li><a href="blogs.html">Blogok</a></li>
+    <li><a href="works.html">Munkáim</a></li>
+    <li><a href="contact.html">Kapcsolat</a></li>
+</ul>
     </header>
 
-    <!-- TARTALOM -->
+    <!-- CONTENT -->
     <main class="pt-28 pb-20 container mx-auto px-4">
 
         <h1 class="text-heading font-bold text-4xl md:text-5xl mb-12">Munkáim</h1>
 
         <div class="space-y-16">
 
-            <!-- Munka -->
+            <!-- Work item -->
             <div class="flex flex-col md:flex-row items-start gap-8">
                 <img src="https://placehold.co/600x400" alt="Work 1" class="w-full md:w-64 rounded-lg shadow">
 
@@ -85,10 +87,14 @@
                     <p class="text-text leading-relaxed mb-4 max-w-xl">
                         Modern, minimalista újratervezés, reszponzív felépítéssel. A cél a jobb vizuális hierarchia és nagyobb áttekinthetőség volt.
                     </p>
+
+                    <a href="work-detail.html" class="text-primary font-medium hover:underline">
+                        Részletek megtekintése →
+                    </a>
                 </div>
             </div>
 
-            <!-- Munka -->
+            <!-- Work item -->
             <div class="flex flex-col md:flex-row items-start gap-8">
                 <img src="https://placehold.co/600x400" alt="Work 2" class="w-full md:w-64 rounded-lg shadow">
 
@@ -103,10 +109,14 @@
                     <p class="text-text leading-relaxed mb-4 max-w-xl">
                         Egy komplett UI kit több mint 30 képernyővel, letisztult ikonokkal, komponensekkel és variációkkal.
                     </p>
+
+                    <a href="work-detail.html" class="text-primary font-medium hover:underline">
+                        Részletek megtekintése →
+                    </a>
                 </div>
             </div>
 
-            <!-- Munka -->
+            <!-- Work item -->
             <div class="flex flex-col md:flex-row items-start gap-8">
                 <img src="https://placehold.co/600x400" alt="Work 3" class="w-full md:w-64 rounded-lg shadow">
 
@@ -121,6 +131,10 @@
                     <p class="text-text leading-relaxed mb-4 max-w-xl">
                         Letisztult webáruház főoldal, fókuszban a termékekkel és a könnyű UX-szel.
                     </p>
+
+                    <a href="work-detail.html" class="text-primary font-medium hover:underline">
+                        Részletek megtekintése →
+                    </a>
                 </div>
             </div>
 
@@ -131,7 +145,5 @@
     <footer class="bg-bg text-text text-center py-8 border-t">
         &copy; 2025 Portfolio. Minden jog fenntartva.
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
