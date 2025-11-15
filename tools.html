@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Használt technológiák</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6464',
+                        secondary: '#00A8CC',
+                        heading: '#21243D',
+                        text: '#8695A4',
+                        bg: '#FFFFFF'
+                    },
+                    fontFamily: {
+                        heebo: ['Heebo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-bg font-heebo text-text">
+
+    <!-- NAVBAR -->
+    <header class="bg-bg shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-heading">Portfólió</div>
+            <nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-heading focus:outline-none">
+                        &#9776;
+                    </button>
+                </div>
+                <ul id="menu" class="hidden md:flex space-x-6 text-heading font-medium">
+                    <li><a href="index.html" class="hover:text-primary">Kezdőoldal</a></li>
+                    <li><a href="blogs.html" class="hover:text-primary">Blogok</a></li>
+                    <li><a href="works.html" class="hover:text-primary">Munkáim</a></li>
+                    <li><a href="contact.html" class="hover:text-primary">Kapcsolat</a></li>
+                    <li><a href="tools.html" class="hover:text-primary">Technológiák</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobil menü -->
+        <ul id="mobile-menu" class="hidden flex-col bg-bg absolute w-full left-0 text-center space-y-4 py-4 text-heading font-medium">
+            <li><a href="index.html">Kezdőoldal</a></li>
+            <li><a href="blogs.html">Blogok</a></li>
+            <li><a href="works.html">Munkáim</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+            <li><a href="tools.html">Technológiák</a></li>
+        </ul>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="pt-28 pb-20 container mx-auto px-4">
+
+        <h1 class="text-heading font-bold text-4xl md:text-5xl mb-12">Használt technológiák</h1>
+
+        <p class="text-text mb-10 max-w-2xl leading-relaxed">
+            Az oldal elkészítése során az alábbi technológiákat és eszközöket használtam, hogy a weboldal reszponzív, modern és felhasználóbarát legyen:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Tech item -->
+            <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+                <h2 class="text-heading font-bold text-xl mb-2">HTML5</h2>
+                <p class="text-text">Az oldal alapstruktúráját HTML5 elemekkel építettem fel.</p>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+                <h2 class="text-heading font-bold text-xl mb-2">CSS3 & Tailwind</h2>
+                <p class="text-text">Tailwind CSS segítségével gyorsan és egységesen készítettem a stílusokat.</p>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+                <h2 class="text-heading font-bold text-xl mb-2">JavaScript</h2>
+                <p class="text-text">Interaktív elemekhez, például a mobil menü animációjához JavaScript-et használtam.</p>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+                <h2 class="text-heading font-bold text-xl mb-2">ChatGPT</h2>
+                <p class="text-text">A tartalom generálásában, kód példák előkészítésében és a weboldal tervezésében segített az AI alapú ChatGPT.</p>
+            </div> 
+
+            <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+                <h2 class="text-heading font-bold text-xl mb-2">Figma</h2>
+                <p class="text-text">A dizájn és layout teljes terve Figma-ban készült, pixelpontos referencia a HTML/CSS fejlesztéshez.</p>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-start">
+                <h2 class="text-heading font-bold text-xl mb-2">Google Fonts</h2>
+                <p class="text-text">A Heebo betűtípust a teljes oldalra alkalmaztam a tipográfia egységességéért.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-bg text-text text-center py-8 border-t">
+        &copy; 2025 Portfolio. Minden jog fenntartva.
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
